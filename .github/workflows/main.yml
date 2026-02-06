@@ -26,7 +26,7 @@ jobs:
          python -m pytest
 
     - name: create build artifact
-      run: 
+      run: |
         mkdir build
         cp -r app build/
         zip -r python-app-build.zip build
