@@ -25,7 +25,7 @@ jobs:
       run: |
          python -m pytest
 
-    - name: create build artifacts
+    - name: create build artifact
       run: 
         mkdir build
         cp -r app build/
