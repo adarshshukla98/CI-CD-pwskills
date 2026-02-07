@@ -1,3 +1,4 @@
+---
 name: cicd with test case
 on:
   push:
@@ -29,7 +30,7 @@ jobs:
         with:
           name: python-app-build
           path: python-app-build.zip
- deploy:
+deploy:
   needs: build-test
   runs-on: ubuntu-latest
   steps:
